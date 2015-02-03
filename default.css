@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+	/* zero */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+header, article, section, footer, aside, nav {
+	display: block;
+}
+
+	/* tag selectors */
+
+/* architectural */
+
+body {
+	background: url(images/blue5.png) top center repeat #aa9977;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #004455;
+}
+#container, #wrapper, #page, body > div {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 800px;
+	border: 1px solid #000000;
+	border-top: none;
+	background: #ddeef1;
+}
+#contact {
+	margin-bottom: 150px;
+}
+header, .header, #header {
+	width: 570px;
+	height: 200px;
+	float: right;
+	background: #004455;
+}
+article, .article, #article {
+	float: right;
+	width: 570px;
+	overflow: visible;
+	background: #ffffff;
+}
+article img, .article img, #article img {
+	border: 1px solid;
+	margin: 25px 25px 0 0;
+	float: left;
+	clear: both;
+}
+article > section:first-of-type {
+	border-bottom: 1px solid;
+}
+article > section:last-of-type {
+	margin-left: 252px;
+}
+section  {
+	margin: 0 50px 25px;
+	clear: both;
+}
+section:last-of-type, .section:last-of-type {
+	margin-bottom: 125px;
+}
+section section:last-of-type, .section:last-of-type {
+	margin-bottom: 25px;
+}
+footer, .footer, #footer {
+	color: #8899aa;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #004455;
+	padding: 25px 0;
+	text-align: center;
+	margin-top: 500px;
+}
+nav, .nav, #nav {
+	background: #668893;
+	height: 150px;
+	padding: 25px;
+	float: right;
+	top: 0;
+	left: 0;
+	width: 180px;
+	margin-top: -200px;
+}
+aside, .aside, #aside {
+	position: absolute;
+	top: 240px;
+	left: 50%;
+	margin-left: -375px;
+	width: 182px;
+}
+aside img, .aside img, #aside img {
+	width: 182px;
+}
+figcaption, .figcaption, #figcaption {
+	font-size: 0.8em;
+	font-style: italic;
+	margin-top: 1em;
+}
+
+/* type */
+
+h1, h2, h3 {
+	font-family: Verdana, Geneva, sans-serif;
+	letter-spacing: 0.1em;
+	padding: 1em 0 .5em;
+}
+h1 {
+	font-size: 1.3em;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 70px 75px 0;
+	width: 300px;
+	height: 100px;
+	background: url('images/logo2.png') top left no-repeat;
+}
+h2 {
+	margin-left: 75px;
+}
+h2 {
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 1em;
+}
+h3, p {
+	margin-left: 25px;
+}
+p {
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+p:first-child {
+	margin-top: 25px;
+}
+p > a {
+	color: #0066cc;
+	font-size: .75em;
+	font-weight: bold;
+	margin-top: 50px;
+}
+nav a, .nav a, #nav a {
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+}
+p:last-of-type {
+	margin-top: 12px;
+}
+ul {
+	line-height: 1.7em;
+	list-style-type: none;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	text-transform: uppercase;
+}
+.tagline, #tagline {
+	padding: 0 75px;
+	color: #aa9977;
+	font-size: 0.9em;
+	font-style: italic;
+}
+span.product {
+	font-weight: bold;
+}
+
+/* form */
+
+fieldset, input[type=text], textarea {
+	border: 1px solid #ddeef3;
+}
+legend {
+	color: #99bbd3;
+	margin: 0 20px 25px;
+	padding: 0 5px;
+	font-size: 0.7em;
+	font-style: italic;
+}
+label {
+	float: left;
+	clear: both;
+	font-size: 0.8em;
+	margin-left: 25px;
+}
+textarea {
+	height: 70px;
+}
+input + label {
+	float: none;
+	clear: none;
+	padding-left; 0;
+}
+textarea + input {
+	float: right;
+}
+input[type=text], textarea {
+	width: 270px;
+	float: right;
+	clear: right;
+	margin-right: 25px;
+}
+input, select {
+	margin-left: 25px;
+}
+input[type=text], input[type=reset], intput[type=submit] {
+	margin-bottom: 12px;
+}
+input[type=text] {
+	height: 20px;
+}
+input[type=submit], input[type=reset] {
+	clear: both;
+	padding: .5em 2em;
+	margin: 25px 0 25px 25px;
+}
+input[type=submit] {
+	float: right;
+	clear: both;
+	position: relative;
+	right: 25px;
+}
+legend + h3 {
+	padding-top: 0;
+}
+
+/* table */
+
+th {
+	border-bottom: 1px solid black;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 10px;
+}
+td {
+	padding: 10px;
+	font-size: 0.7em;
+}
+tbody > tr:nth-of-type(odd) {
+	background: #e9eed0;
+}
+tr > td:first-of-type {
+	font-style: italic;
+}
